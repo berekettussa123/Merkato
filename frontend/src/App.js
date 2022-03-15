@@ -3,6 +3,7 @@ import data from './data';
 
 function App() {
   return (
+    <BrowserRouter>
     <div>
       <header>
         <a href="/">Merkato</a>
@@ -27,7 +28,9 @@ function App() {
         </div>
       </main>
     </div>
+    </BrowserRouter>
   );
+  
 }
 
 export default App;
