@@ -8,3 +8,5 @@
     2.add product
     3.render product
     4.style product
+5.Add bootstrap ui framework
+    1.npm install react-bootstrap bootstrap
