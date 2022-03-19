@@ -1,6 +1,6 @@
 {
   "name": "merkato",
-  "proxy": "http://localhost:5000",
+  "proxy": "http://localhost:5000/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,6 +15,7 @@
     "react-helmet-async": "^1.2.3",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
+    "react-toastify": "^8.2.0",
     "use-reducer-logger": "^1.0.2",
     "web-vitals": "^2.1.4"
   },
