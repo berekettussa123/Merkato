@@ -7,8 +7,6 @@ import ProductScreen from './screens/ProductScreen';
 import Navbar from 'react-bootstrap/Navbar';
 import Badge from 'react-bootstrap/Badge';
 import OrderHistoryScreen from './screens/OrderHistoryScreen';
-import ProfileScreen from './screens/ProfileScreen';
-
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
@@ -21,6 +19,7 @@ import SignupScreen from './screens/SignupScreen';
 import PaymentMethodScreen from './screens/PaymentMethodScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
+import ProfileScreen from './screens/ProfileScreen';
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -57,7 +56,7 @@ function App() {
                   </Link>
                   {userInfo ? (
                     <NavDropdown title={userInfo.name} id="basic-nav-dropdown">
-                      <Link to="/profile">
+                      <Link className="nav-link" to="/profile">
                         <NavDropdown.Item>User Profile</NavDropdown.Item>
                       </Link>
                       <Link to="/orderhistory">
@@ -93,10 +92,7 @@ function App() {
               <Route path="/payment" element={<PaymentMethodScreen />}></Route>
               <Route path="/placeorder" element={<PlaceOrderScreen />} />
               <Route path="/order/:id" element={<OrderScreen />}></Route>
-              <Route
-                path="/orderhistory"
-                element={<OrderHistoryScreen />}
-              ></Route>
+              <Route path="/orderhistory" element={<OrderHistoryScreen />}></Route>
               <Route path="/profile" element={<ProfileScreen />} />
 
               <Route

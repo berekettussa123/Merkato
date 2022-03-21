@@ -1,0 +1,22 @@
+{
+  "name": "merkato",
+  "version": "1.0.0",
+  "description": "1.Create Git Repository\r 2.List Products\r     1.create product\r     2.add product\r     3.render product\r     4.style product\r 5.Add bootstrap ui framework\r     1.npm install react-bootstrap bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",
+    "start": "node backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berekettussa123/Merkato.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/berekettussa123/Merkato/issues"
+  },
+  "homepage": "https://github.com/berekettussa123/Merkato#readme"
+}

@@ -25,7 +25,6 @@ userRouter.post(
     res.status(401).send({ message: 'Invalid email or password' });
   })
 );
-
 userRouter.post(
   '/signup',
   expressAsyncHandler(async (req, res) => {
@@ -44,6 +43,7 @@ userRouter.post(
     });
   })
 );
+
 userRouter.put(
   '/profile',
   isAuth,
@@ -69,6 +69,5 @@ userRouter.put(
     }
   })
 );
-
 
 export default userRouter;
